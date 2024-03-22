@@ -1,0 +1,172 @@
+<!--
+Travis Cooper
+CS 2550 X01
+3/22/2024
+
+This was by far the hardest thing I've had to do this semester. About 20 times I would sit for hours adjusting things 
+over and over in an attempt to fix a formatting issue only for it to turn out I had made a dumb mistake like putting
+the CSS in an incorrect order, or things weren't nested properly, etc. Hopefully this gets better wth practice!
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Top 3 Music Genres</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>My Top 3 Music Genres</h1>
+    <nav>
+        <a href="#" class="nav-link" onclick="toggleSection('jazz')">Jazz</a>
+        <a href="#" class="nav-link" onclick="toggleSection('indie')">Indie</a>
+        <a href="#" class="nav-link" onclick="toggleSection('rock')">Rock</a>
+        <a href="#" class="nav-link" onclick="toggleSections('artists')">Hide/Show Fav Artists</a>
+    </nav>
+</header>
+
+<section id="jazz">
+    <div class="image-container">
+        <img src="jazz.jpg" alt="Jazz Image">
+    </div>
+    <div class="content">
+        <h2>Jazz</h2>
+        <hr>
+        <p>Jazz music is possibly the most captivating musical genre
+            of all time. I started playing jazz in middle school and
+            honestly wasn't really a fan as my exposure to it was
+            hearing our school band and other school bands play at
+            a mediocre level. Once I had the experience of witnessing
+            a professional jazz band play, I finally was hooked. The
+            raw talent that jazz musicians exude on stage is incredible.
+        </p>
+    </div>
+</section>
+
+<section id="jazz-artists" class="artists">
+    <div class="artists-header">
+        <h2>My Favorite Jazz Artists</h2>
+    </div>
+    <div class="artist-grid">
+        <div class="artist">
+            <a href="https://en.wikipedia.org/wiki/Victor_Wooten">
+                <img src="victorwooten.jpg" alt="Victor Wooten">
+            </a>
+            Victor Wooten
+        </div>
+        <div class="artist">
+            <a href="https://en.wikipedia.org/wiki/Buddy_Rich">
+                <img src="buddyrich.jpg" alt="Buddy Rich">
+            </a>
+            Buddy Rich
+        </div>
+        <div class="artist">
+            <a href="https://en.wikipedia.org/wiki/Jaco_Pastorius">
+                <img src="jacopastorius.jpg" alt="Jaco Pastorius">
+            </a>
+            Jaco Pastorius
+        </div>
+    </div>
+</section>
+
+<section id="indie">
+    <div class="image-container">
+        <img src="indie.jpg" alt="Indie Image">
+    </div>
+    <div class="content">
+        <h2>Indie</h2>
+        <hr>
+        <p>Indie is a genre I didn't fully start immersing myself in
+            until well after I was an adult. I started teaching myself
+            the guitar, and after starting to learn songs at home I
+            fell in love with Indie and Acoustic music. There are so
+            many Indie artists to see locally here in Utah, and the
+            community is honestly one of the best parts. I've been to
+            dozens of Indie music festivals, open mics, large conerts,
+            and even a few 'sleepover concerts'.
+        </p>
+    </div>
+</section>
+
+<section id="indie-artists" class="artists">
+    <div class="artists-header">
+        <h2>My Favorite Indie Artists</h2>
+    </div>
+    <div class="artist-grid">
+        <div class="artist">
+            <a href="https://en.wikipedia.org/wiki/Sufjan_Stevens">
+                <img src="sufjanstevens.jpg" alt="Sufjan Stevens">
+            </a>
+            Sufjan Stevens
+        </div>
+        <div class="artist">
+            <a href="https://en.wikipedia.org/wiki/City_and_Colour">
+                <img src="cityandcolour.jpg" alt="City and Colour">
+            </a>
+            City and Colour
+        </div>
+        <div class="artist">
+            <a href="https://en.wikipedia.org/wiki/Noah_Kahan">
+                <img src="noahkahan.jpg" alt="Noah Kahan">
+            </a>
+            Noah Kahan
+        </div>
+    </div>
+</section>
+
+<section id="rock">
+    <div class="image-container">
+        <img src="rock.jpg" alt="Rock Image">
+    </div>
+    <div class="content">
+        <h2>Rock</h2>
+        <hr>
+        <p>Rock is the biggest constant in my life. I was raised
+            on classic rock by my dad and attended countless rock
+            concerts before I was evern a teenager. My love of
+            rock has expanded greatly to also include every variety
+            including garage, punk, alt, and even hard rock/metal.
+            When I'm sad I listen to rock. When I'm working out I
+            listen to rock. While my other music tastes have varied
+            and changed, this has been my main staple in my music my
+            whole life.
+        </p>
+    </div>
+</section>
+
+<section id="rock-artists" class="artists">
+    <div class="artists-header">
+        <h2>My Favorite Rock Artists</h2>
+    </div>
+    <div class="artist-grid">
+        <div class="artist">
+            <a href="https://en.wikipedia.org/wiki/Queens_of_the_Stone_Age">
+                <img src="qotsa.jpg" alt="Queens of the Stone Age">
+            </a>
+            Queens of the Stone Age
+        </div>
+        <div class="artist">
+            <a href="https://en.wikipedia.org/wiki/Cleopatrick">
+                <img src="cleopatrick.jpg" alt="Cleopatrick">
+            </a>
+            Cleopatrick
+        </div>
+        <div class="artist">
+            <a href="https://en.wikipedia.org/wiki/The_White_Stripes">
+                <img src="thewhitestripes.jpg" alt="The White Stripes">
+            </a>
+            The White Stripes
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Travis Cooper. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
